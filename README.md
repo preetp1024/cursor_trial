@@ -1,3 +1,5 @@
+# Made using CURSOR AI
+
 # My Blog Website
 
 A clean, modern, and responsive blog website built with HTML, CSS, and JavaScript.
