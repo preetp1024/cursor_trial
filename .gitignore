@@ -1,104 +1,35 @@
-# Dependencies
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Node.js
 node_modules/
-package-lock.json
-yarn.lock
-.npm
-.yarn
+npm-debug.log
+yarn-debug.log
+yarn-error.log
 
 # Environment variables
 .env
 .env.local
-.env.*.local
-.env.development
-.env.test
-.env.production
+.env.development.local
+.env.test.local
+.env.production.local
 
-# Build output
-dist/
-build/
-out/
-.next/
-.nuxt/
-.output/
+# Logs
+logs
+*.log
 
-# IDE and Editor files
+# Build directories
+/dist
+/build
+
+# IDE specific files
 .idea/
 .vscode/
 *.swp
-*.swo
-*.swn
-*.bak
-*.sublime-workspace
-*.sublime-project
-.project
-.classpath
-.settings/
-*.code-workspace
-
-# System Files
-.DS_Store
-Thumbs.db
-desktop.ini
-$RECYCLE.BIN/
-*.lnk
-
-# Logs and databases
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-*.sqlite
-*.sqlite3
-*.db
-
-# Cache and temporary files
-.cache/
-.temp/
-.tmp/
-.temp/
-*.tmp
-*.temp
-.eslintcache
-.stylelintcache
-
-# Testing and coverage
-coverage/
-.nyc_output/
-*.lcov
-.jest/
-
-# Documentation
-docs/_build/
-site/
-
-# Misc
-*.bak
-*.orig
-*.rej
-*.patch
-*.diff
-*.zip
-*.tar.gz
-*.rar
-*.7z
-
-# Screenshots and images
-*.png
-*.jpg
-*.jpeg
-*.gif
-*.bmp
-*.tiff
-*.ico
-*.svg
-
-# Logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Cache directories
-.cache/
-.temp/
-.tmp/ 
+*.swo 
