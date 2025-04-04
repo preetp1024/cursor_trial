@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - My Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">My Blog</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="blog-hero">
+            <h1>Blog Posts</h1>
+            <p>Explore our latest articles and insights</p>
+        </section>
+
+        <section class="blog-container">
+            <aside class="blog-sidebar">
+                <div class="search-box">
+                    <input type="text" placeholder="Search posts...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+
+                <div class="categories">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Lifestyle</a></li>
+                        <li><a href="#">Travel</a></li>
+                        <li><a href="#">Food</a></li>
+                        <li><a href="#">Health</a></li>
+                    </ul>
+                </div>
+
+                <div class="recent-posts">
+                    <h3>Recent Posts</h3>
+                    <ul>
+                        <li><a href="#">First Blog Post</a></li>
+                        <li><a href="#">Second Blog Post</a></li>
+                        <li><a href="#">Third Blog Post</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <div class="blog-main">
+                <article class="blog-post">
+                    <img src="https://via.placeholder.com/800x400" alt="Blog post image">
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="category">Technology</span>
+                            <span class="date">March 29, 2024</span>
+                            <span class="author">By John Doe</span>
+                        </div>
+                        <h2>First Blog Post</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+
+                <article class="blog-post">
+                    <img src="https://via.placeholder.com/800x400" alt="Blog post image">
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="category">Lifestyle</span>
+                            <span class="date">March 28, 2024</span>
+                            <span class="author">By Jane Smith</span>
+                        </div>
+                        <h2>Second Blog Post</h2>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+
+                <div class="pagination">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">Next <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2024 My Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

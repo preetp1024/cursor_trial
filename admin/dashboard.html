@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - My Blog</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">My Blog</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../blog.html">Blog</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <button id="theme-toggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button id="logout-btn" class="logout-btn">
+                    <i class="fas fa-sign-out-alt"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="admin-main">
+        <div class="admin-container">
+            <aside class="admin-sidebar">
+                <h2>Admin Panel</h2>
+                <nav class="admin-nav">
+                    <ul>
+                        <li><a href="#" class="active" data-section="posts"><i class="fas fa-file-alt"></i> Posts</a></li>
+                        <li><a href="#" data-section="new-post"><i class="fas fa-plus"></i> New Post</a></li>
+                        <li><a href="#" data-section="categories"><i class="fas fa-tags"></i> Categories</a></li>
+                        <li><a href="#" data-section="settings"><i class="fas fa-cog"></i> Settings</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <div class="admin-content">
+                <section id="posts-section" class="admin-section active">
+                    <h2>Manage Posts</h2>
+                    <div class="posts-list">
+                        <!-- Posts will be dynamically loaded here -->
+                    </div>
+                </section>
+
+                <section id="new-post-section" class="admin-section">
+                    <h2>Create New Post</h2>
+                    <form id="new-post-form" class="post-form">
+                        <div class="form-group">
+                            <label for="post-title">Title</label>
+                            <input type="text" id="post-title" name="title" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="post-category">Category</label>
+                            <select id="post-category" name="category" required>
+                                <option value="">Select a category</option>
+                                <option value="technology">Technology</option>
+                                <option value="lifestyle">Lifestyle</option>
+                                <option value="travel">Travel</option>
+                                <option value="food">Food</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="post-image">Featured Image</label>
+                            <input type="file" id="post-image" name="image" accept="image/*" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="post-content">Content</label>
+                            <textarea id="post-content" name="content" rows="10" required></textarea>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="submit-btn">Publish Post</button>
+                            <button type="button" class="draft-btn">Save as Draft</button>
+                        </div>
+                    </form>
+                </section>
+
+                <section id="categories-section" class="admin-section">
+                    <h2>Manage Categories</h2>
+                    <div class="categories-list">
+                        <!-- Categories will be dynamically loaded here -->
+                    </div>
+                    <form id="new-category-form" class="category-form">
+                        <div class="form-group">
+                            <label for="category-name">New Category</label>
+                            <input type="text" id="category-name" name="name" required>
+                        </div>
+                        <button type="submit" class="submit-btn">Add Category</button>
+                    </form>
+                </section>
+
+                <section id="settings-section" class="admin-section">
+                    <h2>Settings</h2>
+                    <form id="settings-form" class="settings-form">
+                        <div class="form-group">
+                            <label for="site-title">Site Title</label>
+                            <input type="text" id="site-title" name="siteTitle" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="site-description">Site Description</label>
+                            <textarea id="site-description" name="siteDescription" rows="3" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="admin-email">Admin Email</label>
+                            <input type="email" id="admin-email" name="adminEmail" required>
+                        </div>
+                        <button type="submit" class="submit-btn">Save Settings</button>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script src="../script.js"></script>
+    <script src="../theme.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html> 
