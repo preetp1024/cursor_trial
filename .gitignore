@@ -1,22 +1,104 @@
-# System Files
-.DS_Store
-Thumbs.db
-
-# Editor directories and files
-.idea/
-.vscode/
-*.swp
-*.swo
-
 # Dependencies
 node_modules/
 package-lock.json
+yarn.lock
+.npm
+.yarn
 
 # Environment variables
 .env
 .env.local
 .env.*.local
+.env.development
+.env.test
+.env.production
 
 # Build output
 dist/
-build/ 
+build/
+out/
+.next/
+.nuxt/
+.output/
+
+# IDE and Editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+*.bak
+*.sublime-workspace
+*.sublime-project
+.project
+.classpath
+.settings/
+*.code-workspace
+
+# System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Logs and databases
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.sqlite
+*.sqlite3
+*.db
+
+# Cache and temporary files
+.cache/
+.temp/
+.tmp/
+.temp/
+*.tmp
+*.temp
+.eslintcache
+.stylelintcache
+
+# Testing and coverage
+coverage/
+.nyc_output/
+*.lcov
+.jest/
+
+# Documentation
+docs/_build/
+site/
+
+# Misc
+*.bak
+*.orig
+*.rej
+*.patch
+*.diff
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Screenshots and images
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+*.ico
+*.svg
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Cache directories
+.cache/
+.temp/
+.tmp/ 
